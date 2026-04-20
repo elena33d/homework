@@ -42,15 +42,3 @@ trainee
 
 
 Завдання 2. Файли, каталоги та посилання
-
-cd ~
-pwd
-mkdir lab2
-ls
-
-/home/student
-lab2
-...
-
-
-

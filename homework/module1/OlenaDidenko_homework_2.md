@@ -1,1 +1,4 @@
-
+```bash
+cd /
+pwd
+ls

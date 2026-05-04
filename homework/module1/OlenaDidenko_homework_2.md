@@ -166,3 +166,67 @@ find /home -name file.txt
 ```
 
 /home/codespace/lab2/file.txt
+
+
+Завдання 3. Права доступу
+
+1)
+```bash
+cd ~/lab2
+pwd
+ls -l file.txt
+```
+
+/home/codespace/lab2
+-rw-r--r-- 2 codespace codespace 12 May  4 10:44 file.txt
+
+2)
+```bash
+chmod 444 file.txt
+ls -l file.txt
+```
+
+-r--r--r-- 2 codespace codespace 12 May  4 10:44 file.txt
+
+3)
+```bash
+chmod u+w file.txt
+ls -l file.txt
+```
+
+-rw-r--r-- 2 codespace codespace 12 May  4 10:44 file.txt
+
+4)
+```bash
+umask
+```
+
+0022
+
+5)
+```bash
+umask 022
+umask
+```
+
+0022
+
+
+Завдання 4. Користувачі
+
+1)
+```bash
+sudo useradd -m trainee
+```
+
+2)
+```bash
+sudo usermod -aG sudo trainee
+```
+
+3)
+```bash
+cat /etc/passwd | grep trainee
+```
+
+trainee:x:1001:1002::/home/trainee:/bin/sh
